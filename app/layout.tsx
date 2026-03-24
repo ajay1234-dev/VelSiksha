@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import ImageProtection from "../components/ImageProtection";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,7 +66,9 @@ export const metadata: Metadata = {
     images: ["/images/logo.jpeg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/logo.jpeg",
+    apple: "/images/logo.jpeg",
+    shortcut: "/images/logo.jpeg",
   },
 };
 
@@ -79,7 +82,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${outfit.variable} scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ImageProtection />
+        {children}
+      </body>
     </html>
   );
 }

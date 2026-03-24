@@ -88,3 +88,35 @@ body {
 .text-soft-gray {
   color: var(--soft-gray);
 }
+
+/* Image Protection - Disable drag, copy, and selection */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
+}
+
+img.protected-image {
+  pointer-events: none;
+}
+
+/* Prevent text selection on images */
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+/* Additional protection: Disable pointer events on protected images */
+.protected-image {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

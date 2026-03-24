@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
+import ProtectedImage from "./ProtectedImage";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,10 +33,12 @@ export default function Header() {
       <div className="container mx-auto px-3 md:px-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-1.5 md:gap-2">
-          <img
+          <ProtectedImage
             src="/images/logo.jpeg"
             alt="VelSiksha Logo"
             className="h-8 w-auto md:h-10 object-contain"
+            width={40}
+            height={40}
           />
           <span className="text-xl md:text-2xl font-bold font-heading text-primary-blue">
             VelSiksha

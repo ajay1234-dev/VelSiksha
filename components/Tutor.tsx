@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import ProtectedImage from "./ProtectedImage";
 
 export default function Tutor() {
   const highlights = [
@@ -23,10 +24,12 @@ export default function Tutor() {
           {/* Image */}
           <div className="relative order-2 md:order-1">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-              <img
+              <ProtectedImage
                 src="/images/tutor1.jpeg"
                 alt="Tutor Madhumitha R"
                 className="w-full h-auto object-cover"
+                width={600}
+                height={800}
               />
             </div>
             <div className="absolute -top-6 -left-6 w-full h-full bg-light-green rounded-2xl -z-10"></div>
