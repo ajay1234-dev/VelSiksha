@@ -50,13 +50,13 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-gradient-blue text-white font-semibold rounded-lg hover:shadow-glow-blue transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto"
               >
-                Enroll Now <ArrowRight size={18} md={20} />
+                Enroll Now <ArrowRight size={18} />
               </Link>
               <Link
                 href="tel:+916369259646"
                 className="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 border-2 border-primary-blue text-primary-blue font-semibold rounded-lg hover:bg-light-blue transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto"
               >
-                <Phone size={18} md={20} /> Call Now
+                <Phone size={18} /> Call Now
               </Link>
             </div>
 
@@ -65,7 +65,6 @@ export default function Hero() {
                 <CheckCircle
                   className="text-primary-green flex-shrink-0"
                   size={18}
-                  md={20}
                 />
                 <span>Classes 6 to 12</span>
               </div>
@@ -73,7 +72,6 @@ export default function Hero() {
                 <CheckCircle
                   className="text-primary-green flex-shrink-0"
                   size={18}
-                  md={20}
                 />
                 <span>Affordable Fees</span>
               </div>
@@ -107,7 +105,6 @@ export default function Hero() {
                 <Star
                   className="text-yellow-500 flex-shrink-0"
                   size={16}
-                  md={20}
                   fill="currentColor"
                 />
                 <span className="hidden sm:inline">Concept Clarity</span>
@@ -127,7 +124,6 @@ export default function Hero() {
                 <TrendingUp
                   className="text-primary-green flex-shrink-0"
                   size={16}
-                  md={20}
                 />
                 <span className="hidden sm:inline">Best Results</span>
                 <span className="sm:hidden">Results</span>
