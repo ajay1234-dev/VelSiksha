@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   },
   description:
     "Providing structured academic support for students from Classes 6 to 12 with focus on concept clarity and consistent improvement at affordable fees in Chennai.",
+  metadataBase: new URL("https://ajay1234-dev.github.io/VelSiksha"),
   keywords: [
     "tuition centre",
     "tuition classes",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://velsiksha-next.vercel.app",
+    url: "https://ajay1234-dev.github.io/VelSiksha",
     title: "VelSiksha Tuition Centre | Learn. Grow. Excel.",
     description:
       "Quality education for Classes 6-12 with individual attention and affordable fees.",
