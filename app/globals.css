@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2d3748;
+
+  /* Custom Colors - VelSiksha Theme */
+  --primary-blue: #1a5f7a;
+  --secondary-blue: #227c9d;
+  --light-blue: #e9f4f7;
+  --primary-green: #37a05e;
+  --light-green: #e8f7ed;
+  --soft-gray: #4a5568;
+  --warm-beige: #f7fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+  --color-primary-blue: #1a5f7a;
+  --color-secondary-blue: #227c9d;
+  --color-light-blue: #e9f4f7;
+  --color-primary-green: #37a05e;
+  --color-light-green: #e8f7ed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #2d3748;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Custom Utilities */
+.font-heading {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #1a5f7a 0%, #227c9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #1a5f7a 0%, #227c9d 100%);
+}
+
+.bg-gradient-light-blue {
+  background: linear-gradient(135deg, #e9f4f7 0%, #f0f9fb 100%);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 20px rgba(34, 124, 157, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Light Background Utilities */
+.bg-warm-beige {
+  background-color: var(--warm-beige);
+}
+
+.text-soft-gray {
+  color: var(--soft-gray);
+}
