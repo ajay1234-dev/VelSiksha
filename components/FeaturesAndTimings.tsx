@@ -118,7 +118,6 @@ export default function FeaturesAndTimings() {
                   <AlertCircle
                     className="text-primary-blue flex-shrink-0 mt-0.5"
                     size={18}
-                    md={20}
                   />
                   <p className="text-xs md:text-sm font-medium">
                     <strong>Note:</strong> Only one batch is conducted with
