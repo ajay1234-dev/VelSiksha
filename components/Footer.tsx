@@ -31,7 +31,6 @@ export default function Footer() {
               Rights Reserved.
             </p>
             <p className="mt-1">Managed by Madhumitha R</p>
-            <p className="mt-1">Developed by AJ</p>
           </div>
         </motion.div>
       </div>
